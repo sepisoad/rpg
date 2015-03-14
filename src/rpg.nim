@@ -105,11 +105,6 @@ proc parseAppCmdLineArgs() =
       else: 
         stderr.writeln("Error: '" & optParser.key & "' is not a valid option")
 
-  echo(passwordLen)
-  echo(canUseUpperCase)
-  echo(canUseLowerCase)
-  echo(canUseSymbol)
-  echo(canUseNumber)
   var password = password.generate( passwordLen,
                                     canUseUpperCase,
                                     canUseLowerCase,
